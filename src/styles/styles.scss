@@ -1,28 +1,67 @@
-
 @import "/_colors.scss";
+
 body {
     color: $body-text;
-    background-color: #fafafa;
+    background-color: honeydew;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $heading-text;
 }
-h1{
+
+h1 {
     font-size: 34px;
 }
 
-a{
+a {
     color: $link-color;
 }
-.welcome{
+
+.welcome {
     font-size: 24px;
     margin-bottom: 20px;
 }
+
 .bg-demo {
     background: url('../components/category-component/sun.png');
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: whitesmoke;
+    background-color: rgb(245, 245, 245);
     width: 250px;
     height: 250px;
+}
+
+#header-title {
+    font-size: x-large;
+    font-style: normal;
+
+}
+
+#bb-nav-title {
+    font-size: larger;
+    font-weight: 600;
+    margin-inline: 3em;
+}
+
+#bb-logo {
+    height: 15vh;
+}
+
+#bb-home-bg-image {
+    // background-image: url('../images/body_background.png');
+    background-image: url('https://mdbootstrap.com/img/new/slides/041.jpg');
+
+    height: 100vh;
+    background-repeat: no-repeat;
+    // position: relative;
+}
+
+.shopping-cards {
+    min-height: 6em;
+    max-height: 2em;
 }
