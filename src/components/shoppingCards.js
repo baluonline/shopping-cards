@@ -3,6 +3,8 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 const { useEffect } = React
 import { fetchUserData, fetchUsers } from '..//../src/actions/'
+import * as Tree from './TreeView';
+
 
 const ShoppingCards = () => {
   const pageNumber = useSelector(state => state.pageNumber || 0)
@@ -12,6 +14,8 @@ const ShoppingCards = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
+    const test = Tree.TreeviewTraverse(Tree.TreeItems,Tree.targetTreeItem);
+    console.log('test' +test)
     fetchUsers(pageNumber, itemsCount).then(resp => {
       dispatch({ type: resp.type, data: resp.payload })
     })
